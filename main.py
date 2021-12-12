@@ -2,16 +2,6 @@ import os
 import string
 import requests
 from bs4 import BeautifulSoup as Soup
-# import time
-# import sys
-
-
-# def delay_print(text):
-#     for c in text:
-#         sys.stdout.write(c)
-#         sys.stdout.flush()
-#         time.sleep(0.03)
-#     print()
 
 
 number_pages = int(input("Enter number of pages: "))
@@ -59,7 +49,7 @@ for k in range(1, number_pages + 1):
 
     news_list = []
 
-    # filtering the links to articles of the type News:
+    # filtering the links to articles based on chosen type:
 
     for i in range(len(link_list)):
 
